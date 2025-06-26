@@ -14,7 +14,6 @@ window.addEventListener('click', function (event) {
       price: card.querySelector('.price__currency').innerText,
       counter: card.querySelector('[data-counter]').innerText,
     }
-    console.log(productInfo);
     
     const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`)
     
@@ -57,6 +56,8 @@ window.addEventListener('click', function (event) {
     }
     
     card.querySelector('[data-counter]').innerText = '1'
+    
+    toggleCartStatus()
   }
     
 })
